@@ -1,96 +1,300 @@
 <!DOCTYPE html>
-    <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-        <!--========== BOX ICONS ==========-->
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <!--========== BOX ICONS ==========-->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css"
+    />
 
-        <!--========== CSS ==========-->
-        <link rel="stylesheet" href="assets/css/styles.css">
+    <!--========== CSS ==========-->
+    <link rel="stylesheet" href="assets/css/styles.css" />
 
-        <title>Responsive resume cv</title>
-    </head>
-    <body>
-        <!--========== HEADER ==========-->
-        <header class="l-header" id="header">
+    <title>Responsive resume cv</title>
+  </head>
+  <body>
+    <!--========== HEADER ==========-->
+    <header class="l-header" id="header">
+      <nav class="nav bd-container">
+        <a href="#" class="nav__logo">Menu</a>
+
+        <div class="nav__menu" id="nav-menu">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="#home" class="nav__link active-link">
+                <i class="bx bx-home nav__icon"></i>Home
+              </a>
+            </li>
+
+            <li class="nav__item">
+              <a href="#profile" class="nav__link">
+                <i class="bx bx-user nav__icon"></i>Profile
+              </a>
+            </li>
             
-        </header>
+            <li class="nav__item">
+              <a href="#social" class="nav__link">
+                <i class='bx bx-at nav__icon'></i>Social
+              </a>
+            </li>
 
-        <main class="l-main bd-container">
-            <!-- All elements within this div, is generated in PDF -->
-            <div class="resume" id="area-cv">
-                <div class="resume__left">
-                    <!--========== HOME ==========-->
-                    <section class="home" id="home">
-                        
-                        <!-- Theme change button -->
-                        
-    
-                        <!-- Button to generate and download the pdf. Available for desktop. -->
+            <li class="nav__item">
+              <a href="#education" class="nav__link">
+                <i class="bx bx-book nav__icon"></i>Education
+              </a>
+            </li>
 
-                    </section>          
-                    
-                    <!--========== SOCIAL ==========-->
-                    <section class="social section">
-                        
-                    </section>
+            <li class="nav__item">
+              <a href="#skills" class="nav__link">
+                <i class="bx bx-receipt nav__icon"></i>Skills
+              </a>
+            </li>
 
-                    <!--========== PROFILE ==========-->
-                    <section class="profile section" id="profile">
-                        
-                    </section>
-                    
-                    <!--========== EDUCATION ==========-->
-                    <section class="education section" id="education">
-                        
-                    </section>
+            <li class="nav__item">
+              <a href="#experience" class="nav__link">
+                <i class="bx bx-briefcase nav__icon"></i>Experience
+              </a>
+            </li>
 
+            <!-- <li class="nav__item">
+              <a href="#references" class="nav__link">
+                <i class="bx bx-link-external nav__icon"></i>References
+              </a>
+            </li> -->
+          </ul>
+        </div>
 
-                    <!--========== SKILLS  ==========-->
-                    <section class="skills section" id="skills">
-                        
-                    </section>
+        <div class="nav__toggle" id="nav-toggle">
+          <i class="bx bx-grid-alt"></i>
+        </div>
+      </nav>
+    </header>
 
+    <main class="l-main bd-container">
+      <!-- All elements within this div, is generated in PDF -->
+      <div class="resume" id="area-cv">
+        <div class="resume__left">
+          <!--========== HOME ==========-->
+          <section class="home" id="home">
+            <div class="home__container section bg-grid">
+              <div class="home__data bg-grid">
+                <!-- ADD FOTO -->
+                <img src="assets/img/img.JPG" alt="" class="home__img" />
+                <h1 class="home__title">Khvorost Igor</h1>
+                <h3 class="home__profession">JS developer</h3>
+                <!-- ADD PDF -->
+                <div>
+                  <a
+                    download=""
+                    href="assets/pdf/ResumeCv.pdf"
+                    class="home__button-movil"
+                    >Download</a
+                  >
+                </div>
+              </div>
+              
+              <div class="home__address bg-grid">
+                <span class="home__informaion">
+                  <i class="bx bx-phone home__icon"></i> +7(919)879-01-05
+                </span>
+                <span class="home__informaion">
+                  <i class="bx bx-envelope home__icon"></i>
+                  igorkhvorost@gmail.com
+                </span>
+                <span class="home__informaion">
+                  <i class="bx bx-map home__icon"></i> Rostov-on-Don
+                </span>
+              </div>
+            </div>
+            <!-- Theme change button -->
+            <i class='bx bx-moon change-theme' title='Theme' id="theme-button" ></i>
+            <!-- Button to generate and download the pdf. Available for desktop. -->
+            <!-- <i class='bx bx-download generate-pdf' title="Generate PDF" id="resume-button"></i> -->
+          </section>
+
+            <!--========== PROFILE ==========-->
+          <section class="profile section" id="profile">
+            <h2 class="section-title">Profile</h2>
+            <p class="profile__description">Creative Javascript + React developer, learning and upping all my skills by myself. Wish to improve my knowledge in interesting projects. Don’t affraid of difficult tasks. Responsible person. I am starving for new opportunities.</p>
+          </section>
+
+          <!--========== SOCIAL ==========-->
+          <section class="social section" id="social">
+            <h2 class="section-title">SOCIAL</h2>
+            <div class="social__container bg-grid">
+              <a
+                href="https://www.linkedin.com/in/igor-khvorost-3717a1204"
+                target="_blank"
+                class="social__link"
+              >
+                <i class="bx bxl-linkedin-square social__icon"></i> @MYLINKEDIN
+              </a>
+              <a
+                href="https://www.instagram.com/igorkhvorost"
+                target="_blank"
+                class="social__link"
+              >
+                <i class="bx bxl-instagram social__icon"></i> @MYINST
+              </a>
+              <a
+                href="https://www.vk.com/igor_khvorost"
+                target="_blank"
+                class="social__link"
+              >
+                <i class="bx bxl-vk social__icon"></i> @MYVK
+              </a>
+              <a
+                href="https://github.com/Barash7"
+                target="_blank"
+                class="social__link"
+              >
+                <i class='bx bxl-github social__icon'></i> @MYGIT
+              </a>
+            </div>
+          </section>
+         
+        </div>
+
+        <div class="resume__right">
+
+          <!--========== EDUCATION ==========-->
+          <section class="education section" id="education">
+            <h2 class="section-title">Education</h2>
+            <div class="education__container bg-grid">
+              <div class="education__content">
+                <div class="education__time">
+                  <span class="education__rounder"></span>
+                  <span class="education__line"></span>
                 </div>
 
-                <div class="resume__right">
-                    <!--========== EXPERIENCE ==========-->
-                    <section class="experience section" id="experience">
-                        
-                    </section>
-
-                    <!--========== CERTIFICATES ==========-->
-                    <section class="certificate section" id="certificates">
-                        
-                    </section>
-
-                    <!--========== REFERENCES ==========-->
-                    <section class="references section" id="references">
-                        
-                    </section>
-
-                    <!--========== LANGUAGES ==========-->
-                    <section class="languages section">
-                        
-                    </section>
-                    
-                    <!--========== INTERESTS ==========-->
-                    <section class="interests section">
-                        
-                    </section>
+                <div class="education__data bd-grid">
+                  <h3 class="education__title">
+                    Bachelor of International Relationships
+                  </h3>
+                  <span class="education__studies"
+                    >South Federal University</span
+                  >
+                  <span class="education__year">2012 - 2016</span>
                 </div>
-            </div>        
-        </main>
+              </div>
+            </div>
+          </section>
+             <!--========== SKILLS  ==========-->
+            <section class="skills section" id="skills">
+                <h2 class="section-title">Skills</h2>
+                <div class="skills__content bd-grid">
+                  <ul class="skills__data">
+                    <li class="skills__name">
+                      <span class="skills__circle"></span> HTML
+                    </li>
+                    <li class="skills__name">
+                      <span class="skills__circle"></span> CSS
+                    </li>
+                    <li class="skills__name">
+                      <span class="skills__circle"></span> JavaScript
+                    </li>
+                  </ul>
+                  <ul class="skills__data">
+                    <li class="skills__name">
+                      <span class="skills__circle"></span> Node JS
+                    </li>
+                    <li class="skills__name">
+                      <span class="skills__circle"></span> React
+                    </li>
+                    <li class="skills__name">
+                      <span class="skills__circle"></span> Redux
+                    </li>
+                  </ul>
+                </div>
+              </section>
+          <!--========== EXPERIENCE ==========-->
+          <section class="experience section" id="experience">
+            <h2 class="section-title">Experience</h2>
 
-        <!--========== SCROLL TOP ==========-->
-        
+            <div class="experience__container bd-grid">
+              <div class="experience__content">
+                <div class="experience__time">
+                  <span class="experience__rounder"></span>
+                  <span class="experience__line"></span>
+                </div>
+                <div class="experience__data bd-grid">
+                  <h3 class="experience__title">Referent</h3>
+                  <span class="experience__company"
+                    >From 2014-2019 | Referent-Translator</span
+                  >
+                  <p class="experience__discription">work with documentation, translation of documents from Russian into English</p>
+                </div>
+              </div>
+              <div class="experience__content">
+                <div class="experience__time">
+                  <span class="experience__rounder"></span>
+                  <span class="experience__line"></span>
+                </div>
+                <div class="experience__data bd-grid">
+                  <h3 class="experience__title">Freelance</h3>
+                  <span class="experience__company"
+                    >From 2019-2022 | Freelancer</span
+                  >
+                  <p class="experience__discription">Development of functionality for application using JavaScript and React</p>
 
-        <!--========== HTML2PDF ==========-->
-        <script src="assets/js/html2pdf.bundle.min.js"></script>
+                </div>
+              </div>
+            </div>
+          </section>
 
-        <!--========== MAIN JS ==========-->
-        <script src="assets/js/main.js"></script>
-    </body>
+          <!--========== LANGUAGES ==========-->
+          <section class="languages section">
+            <h2 class="section-title">Languages</h2>
+
+            <div class="languages__container">
+              <ul class="languages__content bd-grid">
+                <li class="languages__name">
+                  <span class="languages__circle"></span> English
+                </li>
+                <li class="languages__name">
+                  <span class="languages__circle"></span> Russian
+                </li>
+              </ul>
+            </div>
+          </section>
+
+          <!--========== INTERESTS ==========-->
+          <section class="interests section">
+            <h2 class="section-title">Interests</h2>
+
+            <div class="interests__container bd-grid">
+
+                <div class="interests__content">
+                    <i class='bx bx-headphone interests__icon' ></i>
+                    <span class="interests__name">Music</span>
+                </div>
+
+                <div class="interests__content">
+                    <i class='bx bxs-plane-alt interests__icon' ></i>
+                    <span class="interests__name">Travel</span>
+                </div>
+
+                <div class="interests__content">
+                    <i class='bx bx-book-heart interests__icon' ></i>
+                    <span class="interests__name">Reading</span>
+                </div>
+
+            </div>
+          </section>
+        </div>
+      </div>
+    </main>
+
+    <!--========== SCROLL TOP ==========-->
+    <a href="#" class="scrolltop" id="scroll-top">
+        <i class='bx bxs-chevrons-up scrolltop__icon' ></i>
+    <!--========== HTML2PDF ==========-->
+    <script src="html2pdf.bundle.min.js"></script>
+
+    <!--========== MAIN JS ==========-->
+    <script src="assets/js/main.js"></script>
+  </body>
 </html>
