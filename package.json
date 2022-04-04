@@ -1,0 +1,23 @@
+{
+  "name": "resume-cv",
+  "version": "1.0.0",
+  "description": "Beautiful Responsive resume cv website 📄 using html, css and javascript. Light dark mode 🌗 and PDF export.",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Barash7/CV-Resume.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Barash7/CV-Resume/issues"
+  },
+  "homepage": "https://github.com/Barash7/CV-Resume#readme",
+  "dependencies": {
+    "express": "^4.17.3"
+  }
+}
