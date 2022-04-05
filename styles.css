@@ -376,7 +376,8 @@ img {
   border-radius: 0.25rem;
   transition: 0.3s;
   font-weight: var(--font-medium);
-  margin-top: var(--mb-3);
+  margin-top: var(--mb-2);
+  margin-bottom: var(--mb-2);
 }
 
 .home__button-movil:hover {
