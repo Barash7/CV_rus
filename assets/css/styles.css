@@ -355,6 +355,7 @@ img {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
+  margin-top: 2.22rem;
 }
 
 .home__information {
